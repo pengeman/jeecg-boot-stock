@@ -25,8 +25,8 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
   mail:
-    host: smtp.163.com
-    username: jeecgos@163.com
+    host: smtp.1s63.com
+    username: jeecgos@1s63.com
     password: ??
     properties:
       mail:
@@ -130,9 +130,12 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
-          username: root
-          password: root
+          #url: jdbc:mysql://127.0.0.1:3306/jeecgv3?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          #username: peng
+          #password: sa
+          url: jdbc:mysql://peng.sucicada.cf:3306/jeecg_peng?useUnicode=true&characterEncoding=UTF-8
+          username: peng
+          password: RArGJyCw2j2bii82
           driver-class-name: com.mysql.cj.jdbc.Driver
           # 多数据源配置
           #multi-datasource1:
